@@ -3,7 +3,7 @@ local ThemeManager = {} do
 	ThemeManager.Folder = 'LinoriaLibSettings'
 	-- if not isfolder(ThemeManager.Folder) then makefolder(ThemeManager.Folder) end
 
-	ThemeManager.Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/havoceternal/uilib/refs/heads/main/uilib'))()
+	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {
 		['Default'] 		= { 1, httpService:JSONDecode('{"FontColor":"b80000","MainColor":"1f0000","AccentColor":"640000","BackgroundColor":"110000","OutlineColor":"000000"}') },
 		['BBot'] 			= { 2, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1e1e1e","AccentColor":"7e48a3","BackgroundColor":"232323","OutlineColor":"141414"}') },
